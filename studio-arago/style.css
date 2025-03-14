@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.page1 {
+  background-image: url("https://studioarago.ca/wp-content/uploads/2023/08/arago_accueil-scaled.webp");
+  background-size: 110%;
+  background-position: center;
+}
+
+.top-left {
+  top: 44%;
+  left: 46.5%;
+  z-index: 20;
+}
+
+.bottom-right {
+  top: 50%;
+  left: 52%;
+  z-index: 20;
+}
+
+.scroller-plus-elem {
+  animation: scrollerPlus 30s linear infinite both;
+}
+
+.scroller-plus-elem > h1 {
+  margin-left: 2vw;
+  font-style: italic;
+}
+
+@keyframes scrollerPlus {
+  100% {
+    transform: translate(calc(100% + 2vw));
+  }
+}
+
+.scroller-minus-elem {
+  animation: scrollerMinus 40s linear infinite both;
+}
+
+.scroller-minus-elem > h1 {
+  margin-left: 2vw;
+  font-style: italic;
+}
+
+@keyframes scrollerMinus {
+  100% {
+    transform: translate(calc(-100% - 2vw));
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.page6-img-container {
+  left: 50%;
+  transform: translateX(-50%);
+}
